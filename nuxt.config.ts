@@ -17,6 +17,8 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@nuxt/image",
     "@nuxt/scripts",
+    "@nuxtjs/seo",
+    "@nuxthq/studio",
   ],
   devtools: { enabled: true },
   build: {

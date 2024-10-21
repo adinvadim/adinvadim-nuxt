@@ -8,7 +8,11 @@
     "type": "git",
     "url": "https://github.com/adinvadim/adinvadim-nuxt.git"
   },
-  "keywords": ["nuxt", "layer", "starter"],
+  "keywords": [
+    "nuxt",
+    "layer",
+    "starter"
+  ],
   "type": "module",
   "scripts": {
     "build": "nuxt build",
@@ -27,8 +31,10 @@
     "@nuxt/icon": "^1.5.6",
     "@nuxt/image": "^1.8.1",
     "@nuxt/scripts": "^0.9.5",
+    "@nuxthq/studio": "^2.1.1",
     "@nuxtjs/device": "^3.2.4",
     "@nuxtjs/i18n": "^8.5.5",
+    "@nuxtjs/seo": "2.0.0-rc.23",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@pinia-orm/nuxt": "^1.9.2",
     "@pinia/nuxt": "^0.5.5",
