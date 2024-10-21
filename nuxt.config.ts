@@ -1,5 +1,4 @@
 import { resolve } from "pathe";
-import { getSafeEnv } from "./build-utils/env.util";
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
@@ -42,9 +41,9 @@ export default defineNuxtConfig({
           "./build-utils/nuxt-image/imgproxy.provider"
         ),
         options: {
-          imgProxyUrl: getSafeEnv("IMGPROXY_URL"),
-          imgProxyKey: getSafeEnv("IMGPROXY_KEY"),
-          imgProxySalt: getSafeEnv("IMGPROXY_SALT"),
+          imgProxyUrl: process.env.IMGPROXY_URL,
+          imgProxyKey: process.env.IMGPROXY_KEY,
+          imgProxySalt: process.env.IMGPROXY_SALT,
         },
       },
     },
