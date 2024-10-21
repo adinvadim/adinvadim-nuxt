@@ -1,6 +1,14 @@
 {
-  "name": "nuxt-app",
-  "private": true,
+  "name": "adinvadim-nuxt",
+  "version": "1.0.3",
+  "description": "Nuxt layer starter project",
+  "author": "adinvadim",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adinvadim/adinvadim-nuxt.git"
+  },
+  "keywords": ["nuxt", "layer", "starter"],
   "type": "module",
   "scripts": {
     "build": "nuxt build",
