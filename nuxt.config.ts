@@ -55,4 +55,29 @@ export default defineNuxtConfig({
     cssPath: resolve(__dirname, "./assets/css/tailwind.css"),
     configPath: resolve(__dirname, "./tailwind.config.js"),
   },
+
+  i18n: {
+    locales: [
+      {
+        code: "en",
+        file: resolve(__dirname, "./locales/en.yaml"),
+      },
+      {
+        code: "ru",
+        file: resolve(__dirname, "./locales/ru.yaml"),
+      },
+    ],
+    defaultLocale: "ru",
+    strategy: "prefix",
+    lazy: true,
+    langDir: "locales",
+
+    vueI18n: resolve(__dirname, "./i18n.config.ts"),
+
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: "i18n_redirected",
+      redirectOn: "root", // recommended
+    },
+  },
 });
