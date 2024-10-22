@@ -1,4 +1,7 @@
-import { resolve } from "pathe";
+import { fileURLToPath } from "url";
+import { dirname, join } from "path";
+
+const currentDir = dirname(fileURLToPath(import.meta.url));
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
@@ -39,8 +42,8 @@ export default defineNuxtConfig({
     providers: {
       imgproxy: {
         name: "imgproxy",
-        provider: resolve(
-          __dirname,
+        provider: join(
+          currentDir,
           "./build-utils/nuxt-image/imgproxy.provider"
         ),
         options: {
@@ -53,19 +56,19 @@ export default defineNuxtConfig({
   },
 
   tailwindcss: {
-    cssPath: resolve(__dirname, "./assets/css/tailwind.css"),
-    configPath: resolve(__dirname, "./tailwind.config.js"),
+    cssPath: join(currentDir, "./assets/css/tailwind.css"),
+    configPath: join(currentDir, "./tailwind.config.js"),
   },
 
   i18n: {
     locales: [
       {
         code: "en",
-        file: resolve(__dirname, "./locales/en.yaml"),
+        file: join(currentDir, "./locales/en.yaml"),
       },
       {
         code: "ru",
-        file: resolve(__dirname, "./locales/ru.yaml"),
+        file: join(currentDir, "./locales/ru.yaml"),
       },
     ],
     defaultLocale: "ru",
@@ -73,7 +76,7 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: "locales",
 
-    vueI18n: resolve(__dirname, "./i18n.config.ts"),
+    vueI18n: join(currentDir, "./i18n.config.ts"),
 
     detectBrowserLanguage: {
       useCookie: true,
