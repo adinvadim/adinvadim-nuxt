@@ -3,6 +3,7 @@ import { resolve } from "pathe";
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   modules: [
+    "@nuxthub/core",
     "@nuxt/eslint",
     "@nuxtjs/device",
     "@nuxt/devtools",
@@ -78,6 +79,12 @@ export default defineNuxtConfig({
       useCookie: true,
       cookieKey: "i18n_redirected",
       redirectOn: "root", // recommended
+    },
+  },
+
+  nitro: {
+    experimental: {
+      openAPI: true,
     },
   },
 });
