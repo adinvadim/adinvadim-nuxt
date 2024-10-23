@@ -7,9 +7,11 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   modules: [
     "@nuxthub/core",
+    "@nuxt/devtools",
+    "@nuxtjs/tailwindcss",
     "@nuxt/eslint",
     "@nuxtjs/device",
-    "@nuxt/devtools",
+
     "@nuxt/content",
     "@nuxt/fonts",
     "@nuxtjs/i18n",
@@ -18,13 +20,14 @@ export default defineNuxtConfig({
     "@pinia-orm/nuxt",
     "@nuxt/icon",
     "nuxt-local-iconify",
-    "@nuxtjs/tailwindcss",
     "@nuxt/image",
     "@nuxt/scripts",
     "@nuxtjs/seo",
     "@nuxthq/studio",
   ],
+
   devtools: { enabled: true },
+
   build: {
     transpile: [
       "swiper",
@@ -42,10 +45,7 @@ export default defineNuxtConfig({
     providers: {
       imgproxy: {
         name: "imgproxy",
-        provider: join(
-          currentDir,
-          "./build-utils/nuxt-image/imgproxy.provider"
-        ),
+        provider: join(currentDir, "./utils/nuxt-image/imgproxy.provider"),
         options: {
           imgProxyUrl: process.env.IMGPROXY_URL,
           imgProxyKey: process.env.IMGPROXY_KEY,
@@ -55,20 +55,15 @@ export default defineNuxtConfig({
     },
   },
 
-  tailwindcss: {
-    cssPath: join(currentDir, "./assets/css/tailwind.css"),
-    configPath: join(currentDir, "./tailwind.config.js"),
-  },
-
   i18n: {
     locales: [
       {
         code: "en",
-        file: join(currentDir, "./locales/en.yaml"),
+        file: "en.yaml",
       },
       {
         code: "ru",
-        file: join(currentDir, "./locales/ru.yaml"),
+        file: "ru.yaml",
       },
     ],
     defaultLocale: "ru",

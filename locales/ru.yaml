@@ -1,1 +1,6 @@
-hello: Привет
+countdown:
+  title: Осталось времени для скидки
+  days: дней
+  hours: часов
+  min: мин
+  sec: сек

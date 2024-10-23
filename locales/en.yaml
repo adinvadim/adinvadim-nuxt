@@ -1,1 +1,6 @@
-hello: Hello
+countdown:
+  title: Time left for discount
+  days: days
+  hours: hours
+  min: min
+  sec: sec
