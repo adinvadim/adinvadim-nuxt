@@ -1,39 +1,39 @@
 <template>
-  <div class="base-countdown">
-    <div class="base-countdown-title" v-if="showTitle">
+  <div class="avui-countdown">
+    <div class="avui-countdown-title" v-if="showTitle">
       {{ t("countdown.title") }}
     </div>
-    <div class="base-countdown-content">
-      <div class="base-countdown-item">
-        <span class="base-countdown-item-value">
+    <div class="avui-countdown-content">
+      <div class="avui-countdown-item">
+        <span class="avui-countdown-item-value">
           <span :style="`--value: ${days}`"></span>
         </span>
-        <span class="base-countdown-item-label">
+        <span class="avui-countdown-item-label">
           {{ t("countdown.days") }}
         </span>
       </div>
 
-      <div class="base-countdown-item">
-        <span class="base-countdown-item-value">
+      <div class="avui-countdown-item">
+        <span class="avui-countdown-item-value">
           <span :style="`--value: ${hours}`"></span>
         </span>
-        <span class="base-countdown-item-label">
+        <span class="avui-countdown-item-label">
           {{ t("countdown.hours") }}
         </span>
       </div>
-      <div class="base-countdown-item">
-        <span class="base-countdown-item-value">
+      <div class="avui-countdown-item">
+        <span class="avui-countdown-item-value">
           <span :style="`--value: ${minutes}`"></span>
         </span>
-        <span class="base-countdown-item-label">
+        <span class="avui-countdown-item-label">
           {{ t("countdown.min") }}
         </span>
       </div>
-      <div class="base-countdown-item">
-        <span class="base-countdown-item-value">
+      <div class="avui-countdown-item">
+        <span class="avui-countdown-item-value">
           <span :style="`--value: ${seconds}`"></span>
         </span>
-        <span class="base-countdown-item-label">
+        <span class="avui-countdown-item-label">
           {{ t("countdown.sec") }}
         </span>
       </div>
@@ -45,11 +45,14 @@
 const props = defineProps<{
   value?: number | Date;
   showTitle?: boolean;
-}>()
+}>();
 const { t } = useI18n();
-const targetDate = ref<number>(props.value ? new Date(props.value).getTime() : new Date().getTime() + 15 * 60 * 1000 + 5 * 1000);
+const targetDate = ref<number>(
+  props.value
+    ? new Date(props.value).getTime()
+    : new Date().getTime() + 15 * 60 * 1000 + 5 * 1000
+);
 const currentTime = ref(new Date().getTime());
-
 
 const days = computed(() =>
   formatTime(Math.floor((targetDate.value - currentTime.value) / 86400000))
@@ -89,14 +92,14 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="postcss">
-:root .countdown {
+:root .avui-countdown {
   line-height: 1em;
 }
 
-.countdown {
+.avui-countdown {
   display: inline-flex;
 
-  &>* {
+  & > * {
     height: 1em;
     @apply inline-block overflow-y-hidden;
 
@@ -109,8 +112,8 @@ onBeforeUnmount(() => {
   }
 }
 
-.countdown {
-  &>* {
+.avui-countdown {
+  & > * {
     &:before {
       text-align: center;
       transition: all 1s cubic-bezier(1, 0, 0, 1);
@@ -118,23 +121,23 @@ onBeforeUnmount(() => {
   }
 }
 
-.base-countdown-title {
+.avui-countdown-title {
   @apply text-lg font-bold leading-none text-center text-black;
 }
 
-.base-countdown-content {
+.avui-countdown-content {
   @apply justify-center w-full text-center grid grid-flow-col gap-5 auto-cols-max;
 }
 
-.base-countdown-item {
+.avui-countdown-item {
   @apply flex flex-col p-2;
 }
 
-.base-countdown-item-label {
+.avui-countdown-item-label {
   @apply text-base;
 }
 
-.base-countdown-item-value {
+.avui-countdown-item-value {
   @apply font-mono text-5xl text-black countdown;
 }
 </style>
