@@ -4,3 +4,11 @@ countdown:
   hours: hours
   min: min
   sec: sec
+
+s3:
+  checking_file: Checking if file exists
+  file_found: File found
+  file_not_found: File not found
+  uploading: Uploading file
+  upload_success: File successfully uploaded
+  upload_error: Error uploading file to S3

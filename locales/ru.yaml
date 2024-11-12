@@ -4,3 +4,11 @@ countdown:
   hours: часов
   min: мин
   sec: сек
+
+s3:
+  checking_file: Проверяем есть ли этот файл
+  file_found: Файл найден
+  file_not_found: Файл не найден
+  uploading: Загружаем файл
+  upload_success: Файл успешно загружен
+  upload_error: Ошибка при загрузке файла на S3

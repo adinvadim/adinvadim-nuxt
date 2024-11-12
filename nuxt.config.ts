@@ -5,13 +5,19 @@ const currentDir = dirname(fileURLToPath(import.meta.url));
 
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
+  runtimeConfig: {
+    public: {
+      awsRegion: process.env.APP_AWS_REGION || null,
+      awsBucketName: process.env.APP_AWS_BUCKET_NAME || null,
+      cognitoIdentityPoolId: process.env.COGNITO_IDENTITY_POOL_ID || null,
+    },
+  },
   modules: [
     "@nuxthub/core",
     "@nuxt/devtools",
     "@nuxtjs/tailwindcss",
     "@nuxt/eslint",
     "@nuxtjs/device",
-
     "@nuxt/content",
     "@nuxt/fonts",
     "@nuxtjs/i18n",
