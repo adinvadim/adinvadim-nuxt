@@ -58,7 +58,7 @@
   },
   "devDependencies": {
     "@types/canvas-confetti": "^1.6.4",
-    "nuxt": "^3.13.2",
+    "nuxt": "^3.16.2",
     "vue": "latest",
     "vue-router": "latest"
   }
