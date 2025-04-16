@@ -95,6 +95,9 @@ dependencies:
   tailwindcss:
     specifier: ^3.4.14
     version: 3.4.14
+  unenv:
+    specifier: ^1.10.0
+    version: 1.10.0
   wrangler:
     specifier: ^3.81.0
     version: 3.81.0
@@ -106,9 +109,6 @@ devDependencies:
   nuxt:
     specifier: ^3.13.2
     version: 3.13.2(eslint@9.13.0)(rollup@4.24.0)(typescript@5.6.3)(vite@5.4.9)
-  unenv:
-    specifier: ^1.10.0
-    version: 1.10.0
   vue:
     specifier: latest
     version: 3.5.12(typescript@5.6.3)
