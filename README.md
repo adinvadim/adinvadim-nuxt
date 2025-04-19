@@ -2,6 +2,24 @@
 
 This is a simple Nuxt layer starter project designed to help you quickly set up and develop Nuxt app with a pre-configured layer structure (For me).
 
+## Install
+
+Add to nuxt.config.ts
+
+```typescript
+export default defineNuxtConfig({
+  extends: ["adinvadim-nuxt"],
+  compatibilityDate: "2024-11-01",
+  devtools: { enabled: true },
+});
+```
+
+And install
+
+```
+pnpm install --save adinvadim-nuxt
+```
+
 ## Drizzle
 
 [Drizzle with Nuxt Hub](https://hub.nuxt.com/docs/recipes/drizzle)
