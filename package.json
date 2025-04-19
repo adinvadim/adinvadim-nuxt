@@ -1,6 +1,6 @@
 {
   "name": "adinvadim-nuxt",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "description": "Nuxt layer starter project",
   "author": "adinvadim",
   "license": "MIT",
@@ -38,7 +38,7 @@
     "@nuxthq/studio": "^2.1.1",
     "@nuxthub/core": "^0.7.34",
     "@nuxtjs/device": "^3.2.4",
-    "@nuxtjs/i18n": "^8.5.5",
+    "@nuxtjs/i18n": "^9.3.0",
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@pinia-orm/nuxt": "^1.9.2",
     "@pinia/nuxt": "^0.5.5",
