@@ -4,7 +4,7 @@ import { dirname, join } from "path";
 const currentDir = dirname(fileURLToPath(import.meta.url));
 
 export default defineNuxtConfig({
-  compatibilityDate: "2024-04-03",
+  compatibilityDate: "2024-11-01",
   runtimeConfig: {
     public: {
       awsRegion: process.env.APP_AWS_REGION || null,
@@ -27,9 +27,13 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "nuxt-local-iconify",
     "@nuxt/image",
-    "@nuxt/scripts",
-    "@nuxtjs/seo",
     "@nuxthq/studio",
+    "@nuxt/scripts",
+    "@nuxtjs/robots",
+    "nuxt-og-image",
+    "nuxt-schema-org",
+    "nuxt-link-checker",
+    // "@nuxtjs/sitemap",
   ],
 
   devtools: { enabled: true },
