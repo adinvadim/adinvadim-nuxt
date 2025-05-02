@@ -1,6 +1,6 @@
 {
   "name": "adinvadim-nuxt",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "description": "Nuxt layer starter project",
   "author": "adinvadim",
   "license": "MIT",
@@ -19,8 +19,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "preview": "nuxt preview"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.689.0",
@@ -65,7 +64,7 @@
   },
   "devDependencies": {
     "@types/canvas-confetti": "^1.6.4",
-    "nuxt": "^3.16.2",
+    "nuxt": "^3.17.1",
     "vue": "latest",
     "vue-router": "latest"
   }
