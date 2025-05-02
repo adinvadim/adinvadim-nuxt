@@ -45,8 +45,8 @@ dependencies:
     specifier: ^2.1.1
     version: 2.1.1
   '@nuxthub/core':
-    specifier: ^0.7.34
-    version: 0.7.34(vite@6.3.0)
+    specifier: ^0.8.25
+    version: 0.8.25(vite@6.3.0)
   '@nuxtjs/device':
     specifier: ^3.2.4
     version: 3.2.4
@@ -1227,8 +1227,8 @@ packages:
       zod: 3.23.8
     dev: false
 
-  /@cloudflare/workers-types@4.20241018.0:
-    resolution: {integrity: sha512-gGWumpaaqnjN/G6SI7CZQ13G4SpIUV+EM8QqvuN2D3cGDF6mKIm+ov7H4x7V/c+AdY90v0FCc8B5nmEEt90MvQ==}
+  /@cloudflare/workers-types@4.20250430.0:
+    resolution: {integrity: sha512-JWAX7ZhQ7KjkdJwASgG58MZ/pQ15brlnZ9/0YBwDQ0hrJ/LaK392aTRFlj2r/PRKDZ5dOuujRywNYaNpfeFiEA==}
     dev: false
 
   /@colors/colors@1.6.0:
@@ -3819,28 +3819,28 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@nuxthub/core@0.7.34(vite@6.3.0):
-    resolution: {integrity: sha512-ia7lK5m4MhhMzg+B6M4Z2o6jcThLxHrRq/YLSob8JSmw1MTv9wjBCZIGR6NLnZDPEny+wTYRd01xEzibQz1Cig==}
+  /@nuxthub/core@0.8.25(vite@6.3.0):
+    resolution: {integrity: sha512-cR46Y9/sevODxZhtDrfBqJ+Uyti0owDUDZWwFxqSExyLcjdQKyOXXc0+B3Y5kfi6VUrt5xVeJnHdBlMBZO1RIg==}
     dependencies:
-      '@cloudflare/workers-types': 4.20241018.0
-      '@nuxt/devtools-kit': 1.6.0(vite@6.3.0)
+      '@cloudflare/workers-types': 4.20250430.0
+      '@nuxt/devtools-kit': 2.4.0(magicast@0.3.5)(vite@6.3.0)
       '@nuxt/kit': 3.16.2(magicast@0.3.5)
-      '@uploadthing/mime-types': 0.3.0
+      '@uploadthing/mime-types': 0.3.4
       citty: 0.1.6
-      confbox: 0.1.8
+      confbox: 0.2.2
       defu: 6.1.4
       destr: 2.0.5
       h3: 1.15.1
       mime: 4.0.7
-      nitro-cloudflare-dev: 0.2.0
+      nitro-cloudflare-dev: 0.2.2
       ofetch: 1.4.1
-      pathe: 1.1.2
-      pkg-types: 1.3.1
+      pathe: 2.0.3
+      pkg-types: 2.1.0
       std-env: 3.9.0
       ufo: 1.6.1
       uncrypto: 0.1.3
       unstorage: 1.15.0(db0@0.3.1)(ioredis@5.6.1)
-      zod: 3.23.8
+      zod: 3.24.3
     transitivePeerDependencies:
       - '@azure/app-configuration'
       - '@azure/cosmos'
@@ -6146,8 +6146,8 @@ packages:
       - supports-color
     dev: false
 
-  /@uploadthing/mime-types@0.3.0:
-    resolution: {integrity: sha512-jN/XFvpKTzcd3MXT/9D9oxx05scnYiSYxAXF/e6hyg377zFducRxivU/kHyYTkpUZPTmOL5q9EQbOkUsXMlSMg==}
+  /@uploadthing/mime-types@0.3.4:
+    resolution: {integrity: sha512-EB0o0a4y++UJFMLqS8LDVhSQgXUllG6t5fwl5cbmOM0Uay8YY5Nc/JjFwzJ8wccdIKz4oYwQW7EOSfUyaMPbfw==}
     dev: false
 
   /@vercel/nft@0.27.7(rollup@4.40.0):
@@ -8599,7 +8599,6 @@ packages:
   /eslint-visitor-keys@4.2.0:
     resolution: {integrity: sha512-UyLnSehNt62FFhSwjZlHmeokpRK59rcz29j+F1/aDgbkbRTk7wIc9XzdoasMUbRNKDM0qQt/+BJ4BrpFeABemw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
-    dev: false
 
   /eslint@9.13.0:
     resolution: {integrity: sha512-EYZK6SX6zjFHST/HRytOdA/zE72Cq/bfw45LSyuwrdvcclb/gqV8RRQxywOBEWO2+WDpva6UZa4CcDeJKzUCFA==}
@@ -8629,7 +8628,7 @@ packages:
       debug: 4.4.0
       escape-string-regexp: 4.0.0
       eslint-scope: 8.1.0
-      eslint-visitor-keys: 4.1.0
+      eslint-visitor-keys: 4.2.0
       espree: 10.2.0
       esquery: 1.6.0
       esutils: 2.0.3
@@ -11107,12 +11106,12 @@ packages:
       p-wait-for: 5.0.2
       qs: 6.14.0
 
-  /nitro-cloudflare-dev@0.2.0:
-    resolution: {integrity: sha512-wcvKa0vFZViQm4VBlnVn0SforhfbYvRtq80+18vPXBvhMiTN7KfOthw71goeXelndlmF65TkvNy6SVUWXwOLqg==}
+  /nitro-cloudflare-dev@0.2.2:
+    resolution: {integrity: sha512-aZfNTVdgXPQeAmXW0Tw8hm3usAHr4qVG4Bg3WhHBGeZYuXr9OyT04Ztb+STkMzhyaXvfMHViAaPUPg06iAYqag==}
     dependencies:
       consola: 3.4.2
       mlly: 1.7.4
-      pkg-types: 1.3.1
+      pkg-types: 2.1.0
     dev: false
 
   /nitropack@2.11.9:
@@ -15339,6 +15338,10 @@ packages:
 
   /zod@3.23.8:
     resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+
+  /zod@3.24.3:
+    resolution: {integrity: sha512-HhY1oqzWCQWuUqvBFnsyrtZRhyPeR7SUGv+C4+MsisMuVfSPx8HpwWqH8tRahSlt6M3PiFAcoeFhZAqIXTxoSg==}
+    dev: false
 
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}

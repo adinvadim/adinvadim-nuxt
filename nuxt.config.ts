@@ -79,9 +79,8 @@ export default defineNuxtConfig({
     defaultLocale: "ru",
     strategy: "prefix",
     lazy: true,
+    restructureDir: "i18n",
     langDir: "locales",
-
-    vueI18n: join(currentDir, "./i18n.config.ts"),
 
     detectBrowserLanguage: {
       useCookie: true,
