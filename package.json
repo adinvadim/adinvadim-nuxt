@@ -51,7 +51,7 @@
     "clipboard-copy": "^4.0.1",
     "hash.js": "^1.1.7",
     "nuxt-link-checker": "4.3.0",
-    "nuxt-local-iconify": "^0.1.1",
+    "nuxt-local-iconify": "^1.0.0",
     "nuxt-og-image": "5.1.2",
     "nuxt-schema-org": "5.0.5",
     "nuxt-seo-utils": "7.0.9",
