@@ -1,6 +1,6 @@
 {
   "name": "adinvadim-nuxt",
-  "version": "1.8.1",
+  "version": "2.0.0",
   "description": "Nuxt layer starter project",
   "author": "adinvadim",
   "license": "MIT",
@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "@types/canvas-confetti": "^1.6.4",
-    "nuxt": "^3.17.1",
+    "nuxt": "^4.0.0",
     "vue": "latest",
     "vue-router": "latest"
   }
